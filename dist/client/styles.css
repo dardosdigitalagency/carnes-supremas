@@ -82,5 +82,20 @@ h1,h2,h3,h4,.hero-proof strong,.certs strong,.accordion summary{letter-spacing:-
   .spec-intro h1,.editorial-title h1{font-size:62px;line-height:.84}
   .design-switch{margin-top:24px}
 }
+
+/* Premium display system: Bodoni Moda + Jost. */
+:root{--serif:"Bodoni Moda",Didot,"Times New Roman",serif;--sans:"Jost","Helvetica Neue",Arial,sans-serif}
+h1,h2,h3,h4,.hero-proof strong,.certs strong,.accordion summary{letter-spacing:-.035em}
+.site-header nav a,.spec-page .site-header nav a{color:#fff!important;opacity:1;text-shadow:0 1px 10px rgba(0,0,0,.35)}
+.spec-page .site-header.is-solid{background:rgba(14,12,10,.94)}
+
+@media(max-width:900px){
+  .editorial-content aside{top:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;overflow:visible;padding:10px 14px;margin:0 -22px 30px}
+  .editorial-content aside a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:7px 8px;text-align:center;line-height:1.15;background:#f7f1e8}
+  .editorial-content aside a:after{font-size:9px}
+  .editorial-content aside a:nth-of-type(4){grid-column:1/2}
+  .editorial-content aside a:nth-of-type(5){grid-column:2/4}
+  .editorial-sections article{scroll-margin-top:118px}
+}
 @media(prefers-reduced-motion:reduce){.hotel-name-track{animation:none}}
 .editorial-product{background:radial-gradient(circle,#fff,#e8ddcd)}.editorial-product img{mix-blend-mode:multiply;filter:drop-shadow(0 25px 26px rgba(70,37,23,.2))}
