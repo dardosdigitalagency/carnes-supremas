@@ -106,3 +106,19 @@ body{font-family:var(--sans);font-weight:400;letter-spacing:0}
 h1,h2,h3,h4,.hero-proof strong,.certs strong,.accordion summary{font-family:var(--serif);font-weight:700;letter-spacing:-.025em}
 .hero h1{max-width:900px;line-height:.88}
 .site-header nav,.btn,.eyebrow,.section-kicker{font-family:var(--sans)}
+
+/* Explicit contrast for every technical-sheet control. */
+.spec-page .site-header nav a{color:#fff!important}
+.spec-page .header-cta{color:#fff!important;background:#171411}
+.spec-page .header-cta:hover{color:#171411!important;background:#fff}
+.spec-page .tab-list button{color:#403830;background:#ebe2d5;border-color:#b8aa99}
+.spec-page .tab-list button[aria-selected="true"]{color:#fff;background:#171411;border-color:#171411}
+.spec-page .design-switch b{color:#fff}
+.spec-page .design-switch a{color:#f0c773;font-weight:700}
+.editorial-spec .design-switch b{color:#171411}
+.editorial-spec .design-switch a{color:#633d08}
+.editorial-content aside a{color:#171411!important}
+.editorial-content aside a:after{display:block;color:#171411!important;font-weight:700}
+.spec-page .spec-cta .btn-gold{color:#171411!important}
+.spec-page .spec-cta .btn-ghost{color:#fff!important;background:transparent}
+.spec-page .spec-cta .btn-ghost:hover{color:#171411!important;background:#fff}
