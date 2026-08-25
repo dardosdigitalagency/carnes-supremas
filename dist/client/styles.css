@@ -38,5 +38,49 @@
 .editorial-hero{min-height:800px;padding:150px 7vw 70px;display:grid;grid-template-columns:.85fr 1.15fr;gap:6vw;align-items:center;background:#ede5d8}.editorial-title h1{font:600 clamp(75px,10vw,140px)/.75 var(--serif);letter-spacing:-.055em;margin:22px 0}.editorial-title h1 em{color:#94651f;font-weight:500}.editorial-title .design-switch{background:#ded2c1}.editorial-product{height:580px;background:#161311;position:relative;display:grid;place-items:center}.editorial-product img{width:82%;height:72%;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 25px 26px rgba(0,0,0,.4))}.vertical-label{position:absolute;left:18px;top:30px;writing-mode:vertical-rl;color:#8e867e;font-size:8px;letter-spacing:.16em;text-transform:uppercase}.editorial-badges{position:absolute;bottom:22px;display:flex;gap:7px}.editorial-badges span{border:1px solid #544b42;color:#eee;padding:7px 10px;font-size:8px;text-transform:uppercase}.editorial-summary{display:grid;grid-template-columns:2fr repeat(3,1fr);background:#171411;color:#fff}.editorial-summary>p,.editorial-summary>div{padding:35px;border-right:1px solid #3d3731;margin:0}.editorial-summary>p{font:500 23px var(--serif)}.editorial-summary strong{display:block;font:600 48px var(--serif);color:var(--gold2)}.editorial-summary span{font-size:9px;text-transform:uppercase}.editorial-content{display:grid;grid-template-columns:250px 1fr;gap:6vw;padding:100px 7vw}.editorial-content aside{position:sticky;top:120px;height:max-content}.editorial-content aside a{display:block;padding:12px 0;border-bottom:1px solid #c8bdaf;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.editorial-sections article{padding:15px 0 75px;scroll-margin-top:120px}.editorial-sections article>span{color:#94651f}.editorial-sections h2{font:600 clamp(45px,5vw,70px)/.9 var(--serif);margin:10px 0 30px}.spec-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;padding:18px 0;border-top:1px solid #c8bdaf}.spec-row b{font-size:11px}.spec-row strong{font:600 20px var(--serif)}.spec-row small{color:#776d62}.editorial-temps{display:grid;grid-template-columns:1fr 1fr;gap:12px}.editorial-temps>div{background:#171411;color:#fff;padding:32px}.editorial-temps strong{font:600 60px var(--serif);color:var(--gold2)}
 @media(max-width:900px){.service-grid{grid-template-columns:1fr 1fr}.ops-intro{display:block}.ops-panel{grid-template-columns:1fr}.ops-images{height:300px}.local-seo{grid-template-columns:1fr}.spec-hero,.editorial-hero{grid-template-columns:1fr}.spec-photo{height:400px}.panel-title{grid-template-columns:35px 1fr}.panel-title p{grid-column:2}.data-grid{grid-template-columns:1fr 1fr}.editorial-summary{grid-template-columns:1fr 1fr}.editorial-summary>p{grid-column:1/-1}.editorial-content{grid-template-columns:1fr}.editorial-content aside{position:static;display:none}}
 @media(max-width:560px){.b2b-services{padding:55px 22px}.service-grid{grid-template-columns:1fr}.process-card{min-height:170px}.operations-compact{padding:65px 22px}.ops-tabs{overflow-x:auto}.ops-tabs button{white-space:nowrap}.ops-panel{gap:25px}.ops-images{height:220px}.hotel-name-track span{padding:22px 24px;font-size:21px}.local-seo{padding:65px 22px}.spec-hero,.editorial-hero{padding:130px 22px 55px}.spec-photo{height:300px}.spec-intro h1,.editorial-title h1{font-size:68px}.spec-tabs{padding:50px 22px 70px}.data-grid,.temp-grid{grid-template-columns:1fr}.panel-title{display:block}.panel-title>span{display:block;margin-bottom:10px}.data-grid>div{min-height:135px}.design-switch{flex-direction:column}.editorial-product{height:400px}.editorial-summary{grid-template-columns:1fr}.editorial-summary>p{grid-column:auto}.editorial-content{padding:70px 22px}.spec-row{grid-template-columns:1fr}.editorial-temps{grid-template-columns:1fr}}
+
+/* Visual refinement: editorial typography without decorative numbering. */
+:root{--serif:"Arial Narrow","Helvetica Neue Condensed",Impact,sans-serif;--sans:"Montserrat",Arial,sans-serif}
+h1,h2,h3,h4,.hero-proof strong,.certs strong,.accordion summary{letter-spacing:-.025em}
+.hero h1 em,.page-hero h1 em,.final-cta em,.catalog-head h2 em,.editorial-title h1 em{font-style:normal}
+.product-card>div>span,.catalog-title>span,.process-icon,.process-card:before,.panel-title>span,.editorial-sections article>span,.ops-panel>div:first-child>span{display:none!important}
+.panel-title{grid-template-columns:1fr 1fr}
+.editorial-content aside a{font-size:0}
+.editorial-content aside a:after{font-size:10px}
+.editorial-content aside a[href="#sensorial"]:after{content:"Sensorial"}
+.editorial-content aside a[href="#inocuidad"]:after{content:"Inocuidad"}
+.editorial-content aside a[href="#empaque"]:after{content:"Empaque"}
+.editorial-content aside a[href="#frio"]:after{content:"Cadena de frío"}
+.editorial-content aside a[href="#control"]:after{content:"Control"}
+
+@media(max-width:900px){
+  .spec-page .site-header{height:72px;padding:0 20px;grid-template-columns:1fr auto}
+  .spec-page .brand img{width:52px;height:52px}
+  .spec-page .site-header nav{position:static;display:flex;background:transparent;padding:0;flex-direction:row;gap:14px}
+  .spec-page .site-header nav a{font-size:9px;white-space:nowrap;color:#fff}
+  .spec-page .header-cta{display:none}
+  .spec-hero,.editorial-hero{min-height:auto;padding:96px 22px 48px;gap:30px}
+  .panel-title{grid-template-columns:1fr}
+  .panel-title p{grid-column:auto}
+  .editorial-content{padding-top:30px}
+  .editorial-content aside{position:sticky;top:72px;z-index:12;display:flex;gap:6px;overflow-x:auto;height:auto;margin:0 -22px 35px;padding:10px 22px;background:rgba(241,234,223,.96);backdrop-filter:blur(12px);box-shadow:0 8px 22px rgba(25,20,15,.08)}
+  .editorial-content aside .section-kicker{display:none}
+  .editorial-content aside a{flex:0 0 auto;border:1px solid #b9ad9e;border-radius:999px;padding:9px 13px}
+}
+
+@media(max-width:700px){
+  .catalog.reveal{opacity:1!important;transform:none!important}
+  .catalog{padding-top:80px}
+}
+
+@media(max-width:560px){
+  .tab-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;overflow:visible;border:0}
+  .tab-list button{min-height:48px;padding:9px 7px;white-space:normal;border:1px solid #c5b9a9;line-height:1.2}
+  .tab-list button:last-child:nth-child(odd){grid-column:1/-1}
+  .spec-photo{height:260px}
+  .editorial-product{height:330px}
+  .spec-intro h1,.editorial-title h1{font-size:62px;line-height:.84}
+  .design-switch{margin-top:24px}
+}
 @media(prefers-reduced-motion:reduce){.hotel-name-track{animation:none}}
 .editorial-product{background:radial-gradient(circle,#fff,#e8ddcd)}.editorial-product img{mix-blend-mode:multiply;filter:drop-shadow(0 25px 26px rgba(70,37,23,.2))}
