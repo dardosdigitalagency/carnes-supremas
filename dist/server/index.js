@@ -11,6 +11,8 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === "/") url.pathname = "/index.html";
+    if (url.pathname === "/hoteles-restaurantes") url.pathname = "/hoteles-restaurantes.html";
+    if (url.pathname === "/nosotros") url.pathname = "/nosotros.html";
 
     if (env.ASSETS?.fetch) {
       const response = await env.ASSETS.fetch(new Request(url, request));
