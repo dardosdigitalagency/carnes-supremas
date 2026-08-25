@@ -1,6 +1,8 @@
 const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('#nav');toggle?.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));nav.classList.toggle('open',!open)});nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle?.setAttribute('aria-expanded','false')}));document.querySelectorAll('#year').forEach(el=>el.textContent=new Date().getFullYear());
 
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.querySelectorAll('.hotel-name-track').forEach(track=>{const clone=track.cloneNode(true);clone.setAttribute('aria-hidden','true');track.parentElement.append(clone)});
+document.querySelectorAll('[data-tabs]').forEach(tabs=>{const buttons=[...tabs.querySelectorAll('[role="tab"]')],panels=[...tabs.querySelectorAll('[role="tabpanel"]')];buttons.forEach((button,i)=>button.addEventListener('click',()=>{buttons.forEach((b,j)=>{b.setAttribute('aria-selected',String(i===j));b.tabIndex=i===j?0:-1});panels.forEach((p,j)=>p.hidden=i!==j)}))});
 if(!reduced){
   document.querySelectorAll('main>section,.product-card,.location-card,.process-card,.testimonial,.client-logo,.catalog-card,.infra-copy,.infra-gallery,.client-names span').forEach(el=>el.classList.add('reveal'));
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -6%'});
