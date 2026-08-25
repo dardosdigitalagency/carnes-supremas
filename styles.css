@@ -99,3 +99,10 @@ h1,h2,h3,h4,.hero-proof strong,.certs strong,.accordion summary{letter-spacing:-
 }
 @media(prefers-reduced-motion:reduce){.hotel-name-track{animation:none}}
 .editorial-product{background:radial-gradient(circle,#fff,#e8ddcd)}.editorial-product img{mix-blend-mode:multiply;filter:drop-shadow(0 25px 26px rgba(70,37,23,.2))}
+
+/* Culinary editorial system: Playfair Display SC + Karla. */
+:root{--serif:"Playfair Display SC","Times New Roman",serif;--sans:"Karla","Helvetica Neue",Arial,sans-serif}
+body{font-family:var(--sans);font-weight:400;letter-spacing:0}
+h1,h2,h3,h4,.hero-proof strong,.certs strong,.accordion summary{font-family:var(--serif);font-weight:700;letter-spacing:-.025em}
+.hero h1{max-width:900px;line-height:.88}
+.site-header nav,.btn,.eyebrow,.section-kicker{font-family:var(--sans)}
