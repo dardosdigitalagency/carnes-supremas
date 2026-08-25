@@ -2,9 +2,11 @@ const toggle=document.querySelector('.menu-toggle');const nav=document.querySele
 
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(!reduced){
-  document.querySelectorAll('main>section,.product-card,.location-card,.process-card,.testimonial,.client-logo').forEach(el=>el.classList.add('reveal'));
+  document.querySelectorAll('main>section,.product-card,.location-card,.process-card,.testimonial,.client-logo,.catalog-card,.infra-copy,.infra-gallery,.client-names span').forEach(el=>el.classList.add('reveal'));
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.12,rootMargin:'0px 0px -6%'});
   document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   document.querySelectorAll('[data-count]').forEach(el=>{const target=Number(el.dataset.count);const countObserver=new IntersectionObserver(([entry],obs)=>{if(!entry.isIntersecting)return;const start=performance.now(),duration=1100;const tick=now=>{const p=Math.min((now-start)/duration,1);el.textContent=Math.round(target*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick);obs.disconnect()},{threshold:.7});countObserver.observe(el)});
   const hero=document.querySelector('.hero,.page-hero');if(hero){addEventListener('scroll',()=>{hero.style.setProperty('--scroll',`${Math.min(scrollY*.12,90)}px`)},{passive:true})}
+  document.querySelectorAll('.catalog-card').forEach(card=>{card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.setProperty('--rx',`${-y*4}deg`);card.style.setProperty('--ry',`${x*5}deg`)});card.addEventListener('pointerleave',()=>{card.style.setProperty('--rx','0deg');card.style.setProperty('--ry','0deg')})});
+  const scrollItems=document.querySelectorAll('.infra-gallery figure');addEventListener('scroll',()=>scrollItems.forEach((el,i)=>{const r=el.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)el.style.setProperty('--lift',`${(r.top-innerHeight/2)*(i%2?.025:-.018)}px`)}),{passive:true});
 }
