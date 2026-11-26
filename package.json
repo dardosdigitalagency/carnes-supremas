@@ -5,11 +5,15 @@
   "description": "Sitio web de Carnes Supremas de Vallarta.",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.mjs",
+    "dev": "node --env-file-if-exists=.env.local server.cjs",
     "build": "node scripts/build.mjs",
-    "check": "node --check script.js"
+    "check": "node --check script.js",
+    "start": "node server.cjs --hosted"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
+  },
+  "dependencies": {
+    "pg": "^8.23.1"
   }
 }

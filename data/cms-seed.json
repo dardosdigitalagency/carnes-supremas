@@ -1,0 +1,384 @@
+{
+  "products": [
+    {
+      "id": "bistec-de-res-cl",
+      "slug": "bistec-de-res-cl",
+      "name": "Bistec de res CL",
+      "category": "res",
+      "image_url": "assets/productos/bistec.webp",
+      "image_alt": "Bistec de res CL",
+      "sort_order": 0,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "falda-de-res",
+      "slug": "falda-de-res",
+      "name": "Falda de res",
+      "category": "res",
+      "image_url": "assets/productos/falda.webp",
+      "image_alt": "Falda de res",
+      "sort_order": 1,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "top-sirloin",
+      "slug": "top-sirloin",
+      "name": "Top Sirloin",
+      "category": "res",
+      "image_url": "assets/productos/top-sirloin.webp",
+      "image_alt": "Top Sirloin",
+      "sort_order": 2,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "chuleta-de-res",
+      "slug": "chuleta-de-res",
+      "name": "Chuleta de res",
+      "category": "res",
+      "image_url": "assets/productos/chuleta.jpg",
+      "image_alt": "Chuleta de res",
+      "sort_order": 3,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "molida-de-pulpa-90-10",
+      "slug": "molida-de-pulpa-90-10",
+      "name": "Molida de pulpa 90/10",
+      "category": "res",
+      "image_url": "assets/productos/molida.webp",
+      "image_alt": "Molida de pulpa de res 90/10",
+      "sort_order": 4,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "filete-de-res-premium",
+      "slug": "filete-de-res-premium",
+      "name": "Filete de res premium",
+      "category": "premium",
+      "image_url": "assets/productos/filete.webp",
+      "image_alt": "Filete de res premium",
+      "sort_order": 5,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "picana",
+      "slug": "picana",
+      "name": "Picaña",
+      "category": "premium",
+      "image_url": "assets/productos/picana.png",
+      "image_alt": "Picaña",
+      "sort_order": 6,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "rib-eye-supremas",
+      "slug": "rib-eye-supremas",
+      "name": "Rib Eye Supremas",
+      "category": "premium",
+      "image_url": "assets/productos/rib-eye.webp",
+      "image_alt": "Rib Eye Supremas",
+      "sort_order": 7,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "new-york",
+      "slug": "new-york",
+      "name": "New York",
+      "category": "premium",
+      "image_url": "assets/productos/new-york.png",
+      "image_alt": "Corte New York",
+      "sort_order": 8,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "t-bone",
+      "slug": "t-bone",
+      "name": "T-Bone",
+      "category": "premium",
+      "image_url": "assets/productos/t-bone.webp",
+      "image_alt": "Corte T-Bone",
+      "sort_order": 9,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "carne-adobada",
+      "slug": "carne-adobada",
+      "name": "Carne adobada",
+      "category": "cerdo",
+      "image_url": "assets/productos/adobada.jpg",
+      "image_alt": "Carne de cerdo adobada",
+      "sort_order": 10,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "lomo-de-cerdo",
+      "slug": "lomo-de-cerdo",
+      "name": "Lomo de cerdo",
+      "category": "cerdo",
+      "image_url": "assets/productos/lomo.jpg",
+      "image_alt": "Lomo de cerdo",
+      "sort_order": 11,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "pork-belly",
+      "slug": "pork-belly",
+      "name": "Pork Belly",
+      "category": "cerdo",
+      "image_url": "assets/productos/pork-belly.png",
+      "image_alt": "Pork Belly",
+      "sort_order": 12,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "espinazo-de-cerdo",
+      "slug": "espinazo-de-cerdo",
+      "name": "Espinazo de cerdo",
+      "category": "cerdo",
+      "image_url": "assets/productos/espinazo.webp",
+      "image_alt": "Espinazo de cerdo",
+      "sort_order": 13,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "espaldilla-de-cerdo",
+      "slug": "espaldilla-de-cerdo",
+      "name": "Espaldilla S/H",
+      "category": "cerdo",
+      "image_url": "assets/productos/espaldilla.webp",
+      "image_alt": "Espaldilla de cerdo sin hueso",
+      "sort_order": 14,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "pechuga-con-hueso",
+      "slug": "pechuga-con-hueso",
+      "name": "Pechuga con hueso",
+      "category": "pollo",
+      "image_url": "assets/productos/pechuga-hueso.jpg",
+      "image_alt": "Pechuga de pollo con hueso",
+      "sort_order": 15,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "pechuga-sin-hueso",
+      "slug": "pechuga-sin-hueso",
+      "name": "Pechuga sin hueso",
+      "category": "pollo",
+      "image_url": "assets/productos/pechuga-sin-hueso.webp",
+      "image_alt": "Pechuga de pollo sin hueso",
+      "sort_order": 16,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "milanesa-de-pollo",
+      "slug": "milanesa-de-pollo",
+      "name": "Milanesa",
+      "category": "pollo",
+      "image_url": "assets/productos/milanesa.png",
+      "image_alt": "Milanesa de pollo",
+      "sort_order": 17,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "muslos-de-pollo",
+      "slug": "muslos-de-pollo",
+      "name": "Muslos",
+      "category": "pollo",
+      "image_url": "assets/productos/muslos.jpg",
+      "image_alt": "Muslos de pollo",
+      "sort_order": 18,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    },
+    {
+      "id": "alitas-de-pollo",
+      "slug": "alitas-de-pollo",
+      "name": "Alitas",
+      "category": "pollo",
+      "image_url": "assets/productos/alitas.jpg",
+      "image_alt": "Alitas de pollo",
+      "sort_order": 19,
+      "archived": false,
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    }
+  ],
+  "sheets": [
+    {
+      "product_id": "bistec-de-res-cl",
+      "title": "Bistec de Res CL",
+      "description": "Corte plano y delgado de pulpa, congelado y listo para operación hotelera y restaurantera.",
+      "image_url": "assets/productos/bistec.webp",
+      "image_alt": "Bistec de Res CL, corte de pulpa de res",
+      "sku": "114",
+      "status": "published",
+      "data": {
+        "metadata": {
+          "origin": "SP 4333 / TIF 654",
+          "state": "Congelado",
+          "allergens": "Sin alérgenos",
+          "pieces": "6",
+          "weight": "30 kg"
+        },
+        "sections": [
+          {
+            "id": "especificaciones",
+            "title": "Especificaciones del producto",
+            "description": "El bistec de res es un corte plano y delgado, obtenido de la pulpa. No contiene alérgenos declarados.",
+            "kind": "table",
+            "fields": [],
+            "columns": [
+              "Característica",
+              "Especificación",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Color",
+                "Rojo brillante",
+                "NOM-251-SSA1-2009"
+              ],
+              [
+                "Olor",
+                "Característico",
+                "NOM-251-SSA1-2009"
+              ],
+              [
+                "Textura",
+                "Firme",
+                "NOM-251-SSA1-2009"
+              ]
+            ]
+          },
+          {
+            "id": "microbiologia",
+            "title": "Calidad microbiológica",
+            "description": "Parámetros definidos para asegurar un producto apto dentro de su cadena de frío.",
+            "kind": "table",
+            "fields": [],
+            "columns": [
+              "Parámetro",
+              "Resultado requerido",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Salmonella spp. / 25 g",
+                "Ausente",
+                "NOM-145-SSA1-1995"
+              ],
+              [
+                "Staphylococcus aureus",
+                "≤100 UFC/gr",
+                "NOM-145-SSA1-1995"
+              ]
+            ]
+          },
+          {
+            "id": "empaque",
+            "title": "Presentación y empaque",
+            "description": "Configuración logística para almacenamiento y distribución profesional.",
+            "kind": "fields",
+            "fields": [
+              {
+                "label": "Empaque primario",
+                "value": "Bolsa al vacío",
+                "note": "Medida 14 × 20"
+              },
+              {
+                "label": "Piezas por caja",
+                "value": "6 piezas",
+                "note": "30 kg por caja"
+              },
+              {
+                "label": "Empaque secundario",
+                "value": "Caja de plástico",
+                "note": "Uso alimentario"
+              },
+              {
+                "label": "Dimensiones de la caja",
+                "value": "60 × 41.5 × 28 cm",
+                "note": "Caja de distribución"
+              }
+            ]
+          },
+          {
+            "id": "conservacion",
+            "title": "Conservación y vida útil",
+            "description": "Los tiempos se garantizan siempre que se mantenga permanentemente la cadena de frío.",
+            "kind": "temperatures",
+            "fields": [
+              {
+                "label": "Almacenar fresco",
+                "value": "0–4 °C",
+                "note": "Vida útil: 30 días"
+              },
+              {
+                "label": "Almacenar congelado",
+                "value": "−18 °C",
+                "note": "Vida útil: 52 semanas"
+              }
+            ]
+          },
+          {
+            "id": "control-documental",
+            "title": "Control documental",
+            "description": "Responsables de elaboración, revisión y autorización de la ficha.",
+            "kind": "fields",
+            "fields": [
+              {
+                "label": "Código de ficha",
+                "value": "CS-FT-5",
+                "note": ""
+              },
+              {
+                "label": "Revisión",
+                "value": "01",
+                "note": "07 de mayo de 2026"
+              },
+              {
+                "label": "Elaboró",
+                "value": "Alejandra Morales Ramírez",
+                "note": ""
+              },
+              {
+                "label": "Revisó",
+                "value": "Jorge Armando Chávez Cortés",
+                "note": ""
+              },
+              {
+                "label": "Autorizó",
+                "value": "Jorge Chávez",
+                "note": ""
+              },
+              {
+                "label": "Precio",
+                "value": "Cotización sobre pedido",
+                "note": ""
+              }
+            ]
+          }
+        ]
+      },
+      "updated_at": "2026-10-14T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,1 +1,113 @@
-<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Ficha técnica | Carnes Supremas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body class="tech-page"><header class="site-header is-solid"><a class="brand" href="index.html"><img src="assets/logo-blanco.svg" alt="Carnes Supremas de Vallarta" width="86" height="63"></a><button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menú</button><nav id="nav"><a href="hoteles-restaurantes.html#catalogo">Volver al catálogo</a><a href="nosotros.html">Nuestra empresa</a></nav><a class="header-cta" href="https://wa.me/523221722741" target="_blank" rel="noopener">Consultar producto</a></header><main class="tech-placeholder"><p class="section-kicker">Ficha técnica individual</p><h1 id="product-name">Producto Carnes Supremas</h1><p>La estructura está lista. Aquí integraremos especificaciones, presentación, conservación, rendimiento, trazabilidad y descarga cuando nos indiques el formato definitivo.</p><div class="hero-actions"><a class="btn btn-gold" id="product-whatsapp" href="https://wa.me/523221722741" target="_blank" rel="noopener">Consultar este producto</a><a class="btn btn-ghost" href="hoteles-restaurantes.html#catalogo">Volver al catálogo</a></div></main><script>const p=new URLSearchParams(location.search).get('producto');if(p){const name=p.replaceAll('-',' ').replace(/\b\w/g,c=>c.toUpperCase());document.querySelector('#product-name').textContent=name;document.title=`${name} | Ficha técnica`;document.querySelector('#product-whatsapp').href=`https://wa.me/523221722741?text=${encodeURIComponent('Hola, quiero información y ficha técnica de '+name)}`}</script><script src="script.js"></script></body></html>
+<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,follow"><title>Ficha técnica | Carnes Supremas</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body class="editorial-spec product-sheet">
+<a class="skip-link" href="#contenido">Saltar al contenido</a><header class="site-header is-solid"><a class="brand" href="index.html" aria-label="Carnes Supremas, inicio"><img src="assets/logo-blanco.svg" alt="Carnes Supremas de Vallarta" width="86" height="63"></a><button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menú</button><nav id="nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="hoteles-restaurantes.html">Hoteles y restaurantes</a><a href="nosotros.html">Nuestra empresa</a><a href="index.html#sucursales">Sucursales</a></nav><a class="header-cta" href="https://wa.me/523221722741" target="_blank" rel="noopener">Solicitar cotización</a></header>
+<main id="contenido">
+  <section class="editorial-hero">
+    <div class="editorial-title">
+      <a class="sheet-back" href="hoteles-restaurantes.html#catalogo">← Volver al catálogo</a>
+      <p class="section-kicker">Catálogo profesional</p>
+      <h1 id="product-name">Fichas de producto</h1>
+      <p>Solicita la ficha técnica vigente, la presentación disponible y una cotización para tu cocina.</p>
+      <a class="btn btn-gold" id="product-whatsapp" href="https://wa.me/523221722741" target="_blank" rel="noopener">Solicitar ficha técnica</a>
+    </div>
+    <div class="editorial-product" id="product-photo" hidden><img id="product-image" alt=""></div>
+  </section>
+</main>
+<footer><div class="footer-brand"><img src="assets/logo-blanco.svg" alt="" width="110" height="80"><p>Calidad y excelencia en productos cárnicos desde 1989.</p></div><div><h3>Contacto empresarial</h3><a href="tel:+523226885940">322 688 5940</a><a href="mailto:jchavez@carnessupremas.mx">jchavez@carnessupremas.mx</a></div><div><h3>Explora</h3><a href="index.html">Inicio</a><a href="nosotros.html">Nuestra empresa</a><a href="index.html#sucursales">Sucursales</a></div><p class="legal">© <span id="year"></span> Carnes Supremas de Vallarta</p></footer>
+<script>
+const products = {
+  "falda-de-res": {
+    "name": "Falda de res",
+    "image": "assets/productos/falda.webp"
+  },
+  "top-sirloin": {
+    "name": "Top Sirloin",
+    "image": "assets/productos/top-sirloin.webp"
+  },
+  "chuleta-de-res": {
+    "name": "Chuleta de res",
+    "image": "assets/productos/chuleta.jpg"
+  },
+  "molida-de-pulpa-90-10": {
+    "name": "Molida de pulpa de res 90/10",
+    "image": "assets/productos/molida.webp"
+  },
+  "pechuga-con-hueso": {
+    "name": "Pechuga de pollo con hueso",
+    "image": "assets/productos/pechuga-hueso.jpg"
+  },
+  "pechuga-sin-hueso": {
+    "name": "Pechuga de pollo sin hueso",
+    "image": "assets/productos/pechuga-sin-hueso.webp"
+  },
+  "milanesa-de-pollo": {
+    "name": "Milanesa de pollo",
+    "image": "assets/productos/milanesa.png"
+  },
+  "muslos-de-pollo": {
+    "name": "Muslos de pollo",
+    "image": "assets/productos/muslos.jpg"
+  },
+  "alitas-de-pollo": {
+    "name": "Alitas de pollo",
+    "image": "assets/productos/alitas.jpg"
+  },
+  "carne-adobada": {
+    "name": "Carne de cerdo adobada",
+    "image": "assets/productos/adobada.jpg"
+  },
+  "lomo-de-cerdo": {
+    "name": "Lomo de cerdo",
+    "image": "assets/productos/lomo.jpg"
+  },
+  "pork-belly": {
+    "name": "Pork Belly",
+    "image": "assets/productos/pork-belly.png"
+  },
+  "espinazo-de-cerdo": {
+    "name": "Espinazo de cerdo",
+    "image": "assets/productos/espinazo.webp"
+  },
+  "espaldilla-de-cerdo": {
+    "name": "Espaldilla de cerdo sin hueso",
+    "image": "assets/productos/espaldilla.webp"
+  },
+  "filete-de-res-premium": {
+    "name": "Filete de res premium",
+    "image": "assets/productos/filete.webp"
+  },
+  "picana": {
+    "name": "Picaña",
+    "image": "assets/productos/picana.png"
+  },
+  "rib-eye-supremas": {
+    "name": "Rib Eye Supremas",
+    "image": "assets/productos/rib-eye.webp"
+  },
+  "new-york": {
+    "name": "Corte New York",
+    "image": "assets/productos/new-york.png"
+  },
+  "t-bone": {
+    "name": "Corte T-Bone",
+    "image": "assets/productos/t-bone.webp"
+  }
+};
+const slug = new URLSearchParams(location.search).get('producto');
+if (Object.hasOwn(products, slug)) {
+  const { name, image } = products[slug];
+  document.title = name + ' | Ficha técnica';
+  document.querySelector('#product-name').textContent = name;
+  const photo = document.querySelector('#product-image');
+  photo.src = image;
+  photo.alt = name;
+  document.querySelector('#product-photo').hidden = false;
+  const inquiry = 'https://wa.me/523221722741?text=';
+  document.querySelector('#product-whatsapp').href = inquiry + encodeURIComponent('Solicito la ficha técnica vigente de ' + name);
+  document.querySelector('.header-cta').href = inquiry + encodeURIComponent('Quiero cotizar ' + name);
+}
+</script>
+<script src="script.js"></script>
+<script src="cms-config.js"></script>
+<script src="cms-api.js"></script>
+<script src="catalogo-cms.js"></script>
+</body></html>
